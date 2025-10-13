@@ -77,9 +77,56 @@ div{
     width: 100%;
 }
 
+button:hover{
+    background-color: #1e5513;
+}
+button:focus{
+    background-color: #1e5513;
+}
+
+footer{
+    text-align: center;
+    margin: 3vw 0  3vw 0;
+    border-top: solid;
+    border-color: #bebebe;
+}
+
+footer .flex{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer p{
+    margin: 0.3% 0%;
+}
+
+img{
+    width: 15vw;
+}
+
+nav svg{
+    margin-left: auto;
+}
+
+.emphasis{
+    font-size: var(--emphasis_text_size);
+    color: var(--dark_green_color);
+}
+
 .flex{
     display: flex;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-rows: auto auto;
+}
+
+.center{
+    text-align: center;
+}
+
 .send_email label{
     font-size: var(--emphasis_text_size);
     font-weight: 600;
@@ -124,31 +171,74 @@ div{
     margin: auto;
 }
 
-button:hover{
-    background-color: #1e5513;
-}
-button:focus{
-    background-color: #1e5513;
+.produto{
+    width: 15vw;
+    padding: 3vh 0vh;
 }
 
-footer{
+#Flores{
+    column-gap: clamp(10px, 15%, 150px);
+    width: 95%;
+    margin: auto;
+}
+
+.produto .flex{
+    justify-content: space-between;
+}
+
+.produto .flex p{
+    font-size: var(--smaller_text_size);
+    opacity: 65%;
+}
+
+.produto p{
+    margin: 1%;
+}
+
+.transparent{
+    opacity: 65%;
+}
+
+#mais_vendidos{
+    column-gap: clamp(10px, 15%, 150px);
+    width: 95%;
+    margin: auto;
+}
+
+.especial{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    margin-top: 5%;
+}
+
+.bi-chevron-compact-right{
+    margin-left: auto;
+}
+.bi-chevron-compact-left{
+    margin-right: auto;
+}
+
+.circle{
+    height: 25vw;
+    width: 25vw;
+    background-color: var(--regular_green_color);
+    align-content: center;
     text-align: center;
-    margin: 3vw 0  3vw 0;
-    border-top: solid;
-    border-color: #bebebe;
+    border-radius: 13vw;
 }
 
-footer .flex{
-    justify-content: center;
-    flex-wrap: wrap;
+.circle img{
+    width: 23vw;
 }
 
-footer p{
-    margin: 0.3% 0%;
+.mais-vendidos h2{
+    margin-top: 5%;
+    text-align: center;
 }
 
 @media(max-width: 768px){
-:root{
+    :root{
         --brand_text_size: 3.4vw;
         --h2_text_size: 3vw;
         --navigation_text_size: 2.8vw;

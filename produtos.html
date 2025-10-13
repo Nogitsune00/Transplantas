@@ -3,73 +3,116 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/logo.png">
         <title>Transplantas Garden Center - Produtos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="estilo/style.css">
     </head>
 
     <body>
         <header>
-        <h1>Transplatas garden center</h1>
+        <h1>Transplantas Garden Center</h1>
         <nav>
             <a href ="index.html">Início</a>
-            <a href ="produtos.html">Produtos</a>
+            <a href ="produtos.html" class="current_page">Produtos</a>
             <a href ="contato.html">Contato</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
         </nav>
     </header>
     <main>
-        <section class="Flores">
-        <div class="produto">
-            <img src="img/astromelias.webp" alt="Buquê de Astromélias">
-            <p>Buquê de Astromélias</p>
-            <p>R$ 79,90</p>
-        </div>
-        <div class="produto">
-            <img src="img/rosasvermelhas.webp" alt="Buquê de Rosas Vermelhas">
-            <p>Buquê de Rosas Vermelhas</p>
-            <p>R$ 69,90</p>
-        </div>
-        <div class="produto">
-            <img src="img/girassol.webp" alt="Buquê de Girassol">
-            <p>Buquê de Girassol</p>
-            <p>R$ 89,90</p>
-        <div class="produto">
-            <img src="img/floresdocampo.webp" alt="Flores do Campo">
-            <p>Buquê Flores do Campo</p>
-            <p>R$ 87,50</p>
-        </div>
-        <div class="produto">
-            <img src="img/orquidea-phalaenopsis.webp" alt="Orquídea Phalaenopsis Plantada">
-            <p>Orquídea Phalaenopsis Plantada</p>
-            <p>R$ 237,90</p>
-        </div>
-        <div class="produto">
-            <img src="img/pinoquio-marsala.webp" alt="Buquê Partitura de Pinóquio Marsala">
-            <p>Buquê Partitura de Pinóquio Marsala</p>
-            <p>R$ 79,90</p>
-        </div>
-        <div class="produto">
-            <img src="img/margarida.webp" alt="Mini Vaso de Margaridinhas Plantadas">
-            <p>Mini Vaso de Margaridinhas Plantadas</p>
-            <p>R$ 199,90</p>
-        </div>
-        <div class="produto">
-            <img src="img/mini-orquideas-ouro.webp" alt="Mini Orquídea Chuva de Ouro">
-            <p>Mini Orquídea Chuva de Ouro</p>
-            <p>R$ 149,90</p>
-        </div>
+        <h2 class="center">Flores</h2>
+        <section id="Flores" class="grid">
+            <div class="produto">
+                <img src="img/astromelias.webp" alt="Buquê de Astromélias">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Buquê de Astromélias</p>
+                <p class="transparent">R$ 79,90</p>
+            </div>
+            <div class="produto">
+                <img src="img/rosasvermelhas.webp" alt="Buquê de Rosas Vermelhas">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Buquê de Rosas Vermelhas</p>
+                <p class="transparent">R$ 69,90</p>
+            </div>
+            <div class="produto">
+                <img src="img/girassol.webp" alt="Buquê de Girassol">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Buquê de Girassol</p>
+                <p class="transparent">R$ 89,90</p>
+            </div>
+            <div class="produto">
+                <img src="img/floresdocampo.webp" alt="Flores do Campo">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Buquê Flores do Campo</p>
+                <p class="transparent">R$ 87,50</p>
+            </div>
+            <div class="produto">
+                <img src="img/orquidea-phalaenopsis.webp" alt="Orquídea Phalaenopsis Plantada">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Orquídea Phalaenopsis Plantada</p>
+                <p class="transparent">R$ 237,90</p>
+            </div>
+            <div class="produto">
+                <img src="img/pinoquio-marsala.webp" alt="Buquê Partitura de Pinóquio Marsala">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Buquê Partitura de Pinóquio Marsala</p>
+                <p class="transparent">R$ 79,90</p>
+            </div>
+            <div class="produto">
+                <img src="img/margarida.webp" alt="Mini Vaso de Margaridinhas Plantadas">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Mini Vaso de Margaridinhas Plantadas</p>
+                <p class="transparent">R$ 199,90</p>
+            </div>
+            <div class="produto">
+                <img src="img/mini-orquideas-ouro.webp" alt="Mini Orquídea Chuva de Ouro">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Mini Orquídea Chuva de Ouro</p>
+                <p class="transparent">R$ 149,90</p>
+            </div>
         </section>
     </main>
     
     <footer>
         <address>
             <p>© 2025 Transplantas Garden Center</p>
-            <p>Fale Conosco: 61 3397-1155</p>
-            <p>Instagram: @transplantasgarden</p>
-            <p>Endereços: <br>
-                St. Hab. Vicente Pires - Vicente Pires, Brasília - DF, 72005-305 <br>
-                s/n Núcleo Rural Taguatinga - Taguatinga, Brasília - DF, 72322-845 <br>
-                 SIA Trecho 8 - Parque Ferroviario De Brasilia, Brasília - DF, 71205-080
-            </p>
+            <div class="flex">
+                <p>Endereço EPTG: <a href="https://www.google.com/maps/dir//St.+Hab.+Vicente+Pires+-+Vicente+Pires,+Bras%C3%ADlia+-+DF,+72005-305/@-15.8138006,-48.0912499,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x935a322c2bcf6f23:0x4d680353204a378c!2m2!1d-48.0088481!2d-15.8138161?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">Rua Um Col. Agrícola Vicente Pires S/N, DF, 72110-800</a></p>
+                <p> • Endereço Tag: <a href="https://www.google.com/maps/dir//s%2Fn+N%C3%BAcleo+Rural+Taguatinga+-+Taguatinga,+Bras%C3%ADlia+-+DF,+72322-845/@-15.8377361,-48.1493215,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x935a333b88b04d79:0x7512dd5012634fe6!2m2!1d-48.0669197!2d-15.8377517?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">s/n Núcleo Rural Taguatinga - Taguatinga, Brasília - DF, 72322-845</a></p>
+            </div>
+            <div class="flex">
+                <p>Telefone EPTG:<a href="tel:+556133971155"> (61) 3397-1155 </a></p>
+                <p>• Telefone Tag: <a href="tel: +556135623040">(61) 3562-3040 </a></p>
+            </div>
+            <p>Instagram: <a href="https://www.instagram.com/transplantasgarden/">@transplantasgarden</a></p>
         </address>
     </footer>
 </body>
