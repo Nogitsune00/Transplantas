@@ -77,13 +77,6 @@ div{
     width: 100%;
 }
 
-button:hover{
-    background-color: #1e5513;
-}
-button:focus{
-    background-color: #1e5513;
-}
-
 footer{
     text-align: center;
     margin: 3vw 0  3vw 0;
@@ -171,6 +164,13 @@ nav svg{
     margin: auto;
 }
 
+button:hover{
+    background-color: #1e5513;
+}
+button:focus{
+    background-color: #1e5513;
+}
+
 .produto{
     width: 15vw;
     padding: 3vh 0vh;
@@ -179,6 +179,7 @@ nav svg{
 #Flores{
     column-gap: clamp(10px, 15%, 150px);
     width: 95%;
+    justify-items: center;
     margin: auto;
 }
 
@@ -203,13 +204,17 @@ nav svg{
     column-gap: clamp(10px, 15%, 150px);
     width: 95%;
     margin: auto;
+    justify-items: center;
 }
 
 .especial{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 5%;
+}
+.smaller_div{
+    width: 50%;
 }
 
 .bi-chevron-compact-right{
@@ -220,7 +225,6 @@ nav svg{
 }
 
 .circle{
-    height: 25vw;
     width: 25vw;
     background-color: var(--regular_green_color);
     align-content: center;
@@ -237,6 +241,12 @@ nav svg{
     text-align: center;
 }
 
+@media(max-width: 1600px){
+    .circle{
+        height: 25vw;
+    }
+}
+
 @media(max-width: 768px){
     :root{
         --brand_text_size: 3.4vw;
@@ -246,6 +256,9 @@ nav svg{
         --emphasis_text_size: 2.2vw;
         --regular_text_size: 2.05vw;
         --smaller_text_size: 1.9vw;
+    }
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .flex{
         flex-wrap: wrap;
@@ -265,9 +278,31 @@ nav svg{
         padding: 1.8% 2.8%;
         border-radius: 5px;
     }
+    .circle{
+        height: 24vw;
+    }
+    img{
+        width: 25vw;
+    }
+    .produto{
+        width: 25vw;
+    }
+    .especial svg{
+        height: 40px;
+    }
+    nav svg{
+        height: 5vw;
+    }
 }
+
 @media(max-width: 430px){
     .send_email .email_info textarea{
         height: 10vh;
+    }
+    .especial svg{
+        height: 20px;
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
