@@ -23,20 +23,26 @@
     <main>
 
         <section class="especial">
-            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi-chevron-compact-left" viewBox="0 0 16 16">
+            <button id="backward_special">
+                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi-chevron-compact-left" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223"/>
-            </svg>
+                </svg>
+            </button>
+            
             <div class="smaller_div">
                 <p class="emphasis">Especial</p>
                 <h2>Para surpreender!</h2>
-                <p>Buquê de flores</p>
+                <p id="especial_desc">Buquê de flores</p>
             </div>
             <div class="circle">
-                <img src="img/rosasvermelhasjornal-removebg.png" alt="Buquê de Rosas Vermelhas - Amor no Jornal">
+                <img src="img/rosasvermelhasjornal-removebg.png" alt="Buquê de Rosas Vermelhas - Amor no Jornal" id="especial_img">
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi-chevron-compact-right" viewBox="0 0 16 16">
+            <button id="forward_special">
+                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi-chevron-compact-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671"/>
-            </svg>
+                </svg>
+            </button>
+            
         </section>
         <section class="mais-vendidos">
             <h2>Mais vendidos</h2>
@@ -95,5 +101,6 @@
             <p>Instagram: <a href="https://www.instagram.com/transplantasgarden/">@transplantasgarden</a></p>
         </address>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

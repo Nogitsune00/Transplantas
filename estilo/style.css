@@ -241,6 +241,20 @@ button:focus{
     text-align: center;
 }
 
+#forward_special{
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#backward_special{
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 @media(max-width: 1600px){
     .circle{
         height: 25vw;
