@@ -23,7 +23,9 @@ A floricultura Transplantas Garden Center ainda não possui um site próprio, o 
 ## Estrutura de pastas e arquivos
 Transplantas/  
 ├── /estilo  
-│   └── style.css           
+│   └── style.css  
+├── /interatividade  
+│   └── script.js  
 ├── /img  
 ├──README.md  
 ├── index.html                
