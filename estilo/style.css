@@ -320,3 +320,38 @@ button:focus{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* === MENU DE PESQUISA === */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 160px;
+}
+
+.search-box svg {
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.search-box svg:hover {
+    color: #007bff;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .search-box input {
+        width: 100px;
+    }
+}

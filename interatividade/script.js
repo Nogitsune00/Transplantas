@@ -1,80 +1,86 @@
-let count = 1;
-let forward = document.getElementById("forward_special")
-let backward = document.getElementById("backward_special")
-let iName = document.getElementById("nome")
-let iEmail = document.getElementById("email")
-let iTelephone = document.getElementById("telefone")
-let iMessage = document.getElementById("mensagem")
-let changePage = document.getElementsByTagName("a")
+document.addEventListener('DOMContentLoaded', function() {
 
-setInterval(function(){
-    nextImage();
-},5000)
+    let count = 1;
+    const forward = document.getElementById("forward_special");
+    const backward = document.getElementById("backward_special");
 
-for (let i = 0; i < changePage.length; i++) {
-    changePage[i].addEventListener('click', function(event){
-        if(iName.value || iEmail.value || iTelephone.value || iMessage.value){
-            let exit = showConfirm();
-            if(!exit){
-                event.preventDefault();
-            }
+    function showImage() {
+        const text_special = document.getElementById("especial_desc");
+        const img_special = document.getElementById("especial_img");
+
+        switch (count) {
+            case 1:
+                text_special.innerHTML = "Buquê de flores";
+                img_special.src = "img/rosasvermelhasjornal-removebg.png";
+                break;
+            case 2:
+                text_special.innerHTML = "Arranjo de girassóis";
+                img_special.src = "img/girasol-removebg.png";
+                break;
+            case 3:
+                text_special.innerHTML = "Buquê de flores";
+                img_special.src = "img/buque_de_flores_do_campo-removebg.png";
+                break;
+            case 4:
+                text_special.innerHTML = "Arranjo de rosas Brancas";
+                img_special.src = "img/arranjo_branco-removebg.png";
+                break;
+            default:
+                text_special.innerHTML = "Buquê de flores";
+                img_special.src = "img/rosasvermelhasjornal-removebg.png";
         }
+    }
+
+    function nextImage() {
+        count++;
+        if(count > 4) count = 1;
+        showImage();
+    }
+
+    setInterval(nextImage, 5000);
+
+    forward?.addEventListener('click', function() {
+        count = count >= 4 ? 1 : count + 1;
+        showImage();
     });
-}
 
-forward.addEventListener('click', function(){
-    if(count > 3){
-        count = 1
-    }else{
-        count += 1;
+    backward?.addEventListener('click', function() {
+        count = count <= 1 ? 4 : count - 1;
+        showImage();
+    });
+
+    const iName = document.getElementById("nome");
+    const iEmail = document.getElementById("email");
+    const iTelephone = document.getElementById("telefone");
+    const iMessage = document.getElementById("mensagem");
+    const changePage = document.getElementsByTagName("a");
+
+    for (let i = 0; i < changePage.length; i++) {
+        changePage[i].addEventListener('click', function(event){
+            if(iName?.value || iEmail?.value || iTelephone?.value || iMessage?.value){
+                let exit = confirm("Ao sair da página pode ser que o seu progresso no formulário seja perdido. \n Tem certeza que deseja sair?");
+                if(!exit){
+                    event.preventDefault();
+                }
+            }
+        });
     }
-    showImage();
+
+    
+    const searchInput = document.getElementById('search');
+    const produtos = document.querySelectorAll('.produto');
+
+    searchInput?.addEventListener('input', (event) => {
+        const value = event.target.value.toLowerCase().trim();
+
+        produtos.forEach(produto => {
+            const text = produto.textContent.toLowerCase();
+            produto.style.display = text.includes(value) ? 'grid' : 'none';
+        });
+    });
 });
-
-backward.addEventListener('click', function(){
-    if (count > 1) {
-        count -= 1;
-    }else{
-        count = 4
-    }
-    showImage();
-});
-
-function nextImage(){
-    count++;
-    if(count>4){
-        count = 1;
-    }
-    showImage();
-};
-
-function showImage(){
-    let text_special = document.getElementById("especial_desc")
-    let img_special = document.getElementById("especial_img")
-    switch (count) {
-        case 1:
-            text_special.innerHTML = "Buquê de flores"
-            img_special.src = "img/rosasvermelhasjornal-removebg.png"
-            break;
-        case 2:
-            text_special.innerHTML = "Arranjo de girassóis"
-            img_special.src = "img/girasol-removebg.png"
-            break;
-        case 3:
-            text_special.innerHTML = "Buquê de flores"
-            img_special.src = "img/buque_de_flores_do_campo-removebg.png"
-            break;
-        case 4:
-            text_special.innerHTML = "Arranjo de rosas Brancas"
-            img_special.src = "img/arranjo_branco-removebg.png"
-            break;
-        default:
-            text_special.innerHTML = "Buquê de flores"
-            img_special.src = "img/rosasvermelhasjornal-removebg.png"
-            break;
-    }
-};
-
-function showConfirm(){
-    return confirm("Ao sair da página pode ser que o seu progresso no formulário seja perdido. \n Tem certeza que deseja sair?");
+function formatString(value) {
+    return value
+        .toLowerCase()
+        .trim();
 }
