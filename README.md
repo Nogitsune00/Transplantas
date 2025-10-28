@@ -54,6 +54,15 @@ Finalização da estilização do site - Ana Luísa
 **14/10/2025**
 Termino de ajuste de responsividade - Ana Luísa
 
+**27/10/2025**
+Implementação de alerta de confirmação ao tentar mudar de página com formulário preenchido - Ana Luísa
+
+**24/10/2025**
+Implementação de carrosel de imagens - Ana Luísa
+
+**28/10/2025**  
+Implementação da barra de pesquisa - Arthur  
+
 ## Justificativas detalhadas de design para fontes, cores, ícones e layout
 ### Escolha de Fontes
 **Lemonada:** utilizada no nome do site, por ser uma fonte amigável, legível e que transmite leveza, combinando com o tema natural e acolhedor da floricultura.
