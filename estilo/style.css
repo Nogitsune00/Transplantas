@@ -112,7 +112,6 @@ nav svg{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     grid-template-rows: auto auto;
 }
 
@@ -254,10 +253,44 @@ button:focus{
     padding: 0;
     cursor: pointer;
 }
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.3em 0.6em;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 1%;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: var(--emphasis_text_size);
+    width: 100%;
+}
+
+.search-box svg {
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.search-box svg:hover {
+    color: #5f9354;
+}
 
 @media(max-width: 1600px){
     .circle{
         height: 25vw;
+    }
+    .search-box{
+        width: clamp(10px, 50%, 600px);
+        height: clamp(30px, 50%, 34px);
+        margin-left: auto;
+    }
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
 }
 
@@ -270,9 +303,6 @@ button:focus{
         --emphasis_text_size: 2.2vw;
         --regular_text_size: 2.05vw;
         --smaller_text_size: 1.9vw;
-    }
-    .grid{
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .flex{
         flex-wrap: wrap;
@@ -295,6 +325,9 @@ button:focus{
     .circle{
         height: 24vw;
     }
+    .circle img{
+        width: 22vw;
+    }
     img{
         width: 25vw;
     }
@@ -307,51 +340,45 @@ button:focus{
     nav svg{
         height: 5vw;
     }
+    .search-box{
+        width: clamp(10px, 50%, 800px);
+    }
+    .search-box svg{
+        height: 3vw;
+    }
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
 }
 
 @media(max-width: 430px){
+    :root{
+        --brand_text_size: 4.4vw;
+        --h2_text_size: 4vw;
+        --navigation_text_size: 3.8vw;
+        --h3_text_size: 3.6vw;
+        --emphasis_text_size: 3.2vw;
+        --regular_text_size: 3.05vw;
+        --smaller_text_size: 2.9vw;
+    }
     .send_email .email_info textarea{
         height: 10vh;
     }
     .especial svg{
         height: 20px;
     }
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
+    img{
+        width: 32vw;
+    }
+    .produto{
+        width: 32vw;
+    }
+    .circle{
+        height: 23vw;
+        width: 27vw;
+    }
+    .circle img{
+        width: 21vw;
     }
 }
 
-
-.search-box {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-}
-
-.search-box input {
-    border: none;
-    outline: none;
-    font-size: 14px;
-    width: 700px;
-}
-
-.search-box svg {
-    color: #000000;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.search-box svg:hover {
-    color: #5f9354;
-}
-
-
-@media (max-width: 600px) {
-    .search-box input {
-        width: 100px;
-    }
-}
