@@ -2,7 +2,7 @@
 Esse é um trabalho universitário onde vamos criar um site para exibir os produtos de uma floricultura
 
 ## Integrantes e Papéis
-**Arthur Ramalho** @ARTHURR1898 – Responsável pela estruturação da página inicial, produtos e documentação
+**Arthur Ramalho** @ARTHURR1898 – Responsável pela estruturação da página inicial, produtos e documentação  
 **Ana Luísa Moreira** @Nogitsune00 – Responsável pela página de contato, design e documentação
 
 ## Tema
@@ -79,6 +79,3 @@ Posicionados principalmente na parte superior (menu) e na página inicial, facil
 Layout limpo e direto, com textos e imagens equilibrados, priorizando a visibilidade dos produtos.
 O design prioriza a experiência do usuário, mantendo uma estrutura simples, responsiva e agradável em dispositivos móveis e desktops.
 A hierarquia visual foi pensada para guiar o olhar do visitante, tornando a navegação fluida e intuitiva.
-
-## Próximos passos
-Implementar o JavaScript.
