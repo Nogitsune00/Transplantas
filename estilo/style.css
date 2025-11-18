@@ -433,21 +433,5 @@ button:focus{
         width: 100%;
         margin-left: 0;
     } 
-    .container-menu {
-        justify-content: flex-end; /* No celular, alinha à direita por causa do hamburger */
-    }
-    
-    /* No celular, talvez você queira esconder a busca ou ajustá-la, 
-       mas isso garante que o layout não quebre */
-    .search-box {
-        display: none;
-    }
 }
 
-.container-menu {
-    display: flex;
-    justify-content: space-between; /* Espalha: links na esq, busca na dir */
-    align-items: center;
-    width: 100%;
-    padding-top: 10px; /* Um espaçamento do título */
-}
