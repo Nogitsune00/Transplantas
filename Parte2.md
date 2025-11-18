@@ -19,11 +19,12 @@
 ## Ajustes realizados
 
 ### Componentes modularizados
-
+Separamos na pasta componentes o header, header com a pesquisa e o footer.
 ### Ajustes de acessibilidade
 Ao analisar o projeto como estava com a ferramenta do google, Lighthouse, foi apontado que o tamanho das fontes usadas em dispositivos móveis estava muito pequena, sendo menor que a recomendada em diversas partes do site, o que foi ajustado aumentando o tamanho da fonte padrão que estava sendo utilizada a partir de certos tamanhos de tela, melhorando a nota do site no quesito acessibilidade pelo Lighthouse.
 ### Ajustes de responsividade
 Foram realizados ajustes de tamanho na barra de pesquisa presente na página de produtos, para que ela pudesse se adequar melhor a diferentes tamanhos de tela. Além disso, foram corrigidos os tamanhos dos produtos em diferentes páginas, para melhor visualização em páginas menores.
 ### Aprimoramento de interatividade
-
+Adicionamos o menu hamburguer para mobile para quem for ultilizar em dispositivos menores ter uma interface mais limpa.
 ### Integrações externas adicionadas
+Criamos um link para nossos  contatos para o whatsapp e o instagram. agora quando o usuario clicar em ambos os links serao direcionados para o aplicativo.
