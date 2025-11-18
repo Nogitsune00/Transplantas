@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <title>Entre em contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <main>
+        <h2>Entre em contato conosco</h2>
+        <section>
+            <h3>Envie um email para Transplantas Garden Center</h3>
+            <form action="" class="send_email">
+                <div class="email_info">
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input type="text" name="nome" id="nome" placeholder="Escreva seu nome" required aria-required="true">
+                </div>
+                
+                <div class="flex">
+                    <div class="email_info">
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="Escreva seu email" required aria-required="true">
+                    </div>
+                    <div class="email_info">
+                        <label for="telefone">Telefone:</label>
+                        <br>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required aria-required="true">
+                    </div>
+                </div>
+                <div class="email_info">
+                    <label for="mensagem">Mensagem</label>
+                    <br>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" id="sendForm">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <div id="footer-container"></div>
+
+<script src="interatividade/script.js"></script>
+<script src="interatividade/componentes.js"></script>
+<script>
+    // Função assíncrona para carregar a página
+    async function carregarPagina() {
+        // Espera os dois componentes carregarem em paralelo
+        await Promise.all([
+            carregarComponente('componentes/header.html', '#header-container'),
+            carregarComponente('componentes/footer.html', '#footer-container')
+        ]);
+        
+        // SÓ ENTÃO inicializa os scripts
+        inicializarScripts();
+    }
+    
+    carregarPagina();
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/logo.png">
+        <title>Transplantas Garden Center</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilo/style.css">
+    </head>
+
+    <body>
+        <div id="header-container"></div>
+    <main>
+
+        <section class="especial">
+            <button id="backward_special" aria-label="backward special section">
+                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi-chevron-compact-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223"/>
+                </svg>
+            </button>
+            
+            <div class="smaller_div">
+                <p class="emphasis">Especial</p>
+                <h2>Para surpreender!</h2>
+                <p id="especial_desc">Buquê de flores</p>
+            </div>
+            <div class="circle">
+                <img src="img/rosasvermelhasjornal-removebg.png" alt="Buquê de Rosas Vermelhas - Amor no Jornal" id="especial_img">
+            </div>
+            <button id="forward_special" aria-label="forward special section">
+                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi-chevron-compact-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671"/>
+                </svg>
+            </button>
+            
+        </section>
+        <section class="mais-vendidos">
+            <h2>Mais vendidos</h2>
+        <div class="grid" id="mais_vendidos">
+            <div class="produto">
+                <img src="img/astromelias.webp" alt="Buquê de Astromélias">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Buquê de Astromélias</p>
+                <p class="transparent">R$ 79,90</p>
+            </div>
+            <div class="produto">
+                <img src="img/rosasvermelhas.webp" alt="Buquê de Rosas Vermelhas">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Buquê de Rosas Vermelhas</p>
+                <p class="transparent">R$ 69,90</p>
+            </div>
+            <div class="produto">
+                <img src="img/girassol.webp" alt="Buquê de Girassol">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Buquê de Girassol</p>
+                <p class="transparent">R$ 89,90</p>
+            </div>
+            <div class="produto">
+                <img src="img/floresdocampo.webp" alt="Flores do Campo">
+                <div class="flex">
+                    <p>Flor</p>
+                    <p>10</p>
+                </div>
+                <p>Buquê Flores do Campo</p>
+                <p class="transparent">R$ 87,50</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+    <div id="footer-container"></div>
+
+<script src="interatividade/script.js"></script>
+<script src="interatividade/componentes.js"></script>
+<script>
+
+    async function carregarPagina() {
+        await Promise.all([
+            carregarComponente('componentes/header.html', '#header-container'),
+            carregarComponente('componentes/footer.html', '#footer-container')
+        ]);
+    
+        inicializarScripts();
+    }
+    
+    carregarPagina();
+</script>
+</body>
+</html>
