@@ -14,7 +14,7 @@
 - Onde o layout "quebra" ou fica estranho?
    - Os elementos de produtos, presentes na página inicial e de produtos, não redimensiona muito bem, ficando muito pequeno em telas menores, sem aproveitar o espaço disponível da menor maneira.
 - Quais melhorias fariam diferença real para o usuário do pequeno negócio?
-  - Mostrar a localização do seu negócio direto em seu site ajudaria os seus clientes a identificarem onde ir, atraindo mais pessoas e facilitando a chamada de novos clientes. 
+  - Ter os principais canais de comunicação no site ajudariam os usuários a entrar em contato diretamente com a loja, incentivando-os a realizar compras e verificar se o que precisam está disponível, ajudando os usuários do serviço.
 
 ## Ajustes realizados
 
