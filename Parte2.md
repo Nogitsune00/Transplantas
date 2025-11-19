@@ -38,6 +38,8 @@ Transplantas/
 ├── produtos.html
 └── README.md 
 
+https://docs.google.com/document/d/1XA8fWBXLq0Uo6-iGrNIf3URnQI_rIO64sU_UWuxrdow/edit?usp=sharing (link da estrutura).
+
 ## Revisão e diagnóstico do projeto atual
 - O que já está funcionando bem?
   - A estrutura geral da página responde bem a mudanças de tamanhos de tela, mas acaba tendo elementos muito pequenos em telas menores, dificultando a visualização. O menu de navegação também não se adequa bem a tela, tendo seus elementos muito próximos e pequenos, dificultando a utilização do touch.  
@@ -71,4 +73,5 @@ Criamos um link para nossos  contatos para o whatsapp e o instagram. agora quand
 ### Acessibilidade - Problemas identificados:
 
 -Alguns botões ainda não possuem nome acessível para leitores de tela.  
+
 - O foco de navegação pelo teclado não aparecia com clareza.
