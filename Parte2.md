@@ -6,6 +6,38 @@
 
 ## Estrutura de arquivos
 
+Transplantas/
+├── componentes
+│   ├── footer.html
+│   ├── header.html
+│   └── header-pesquisa.html
+├── contato.html
+├── estilo
+│   └── style.css
+├── img
+│   ├── arranjo_branco-removebg.png
+│   ├── astromelias.webp
+│   ├── buque_de_flores_do_campo-removebg.png
+│   ├── floresdocampo.webp
+│   ├── girasol-removebg.png
+│   ├── girassol.webp
+│   ├── instagram-logotipo_971166-164438.avif
+│   ├── logo.png
+│   ├── margarida.webp
+│   ├── mini-orquideas-ouro.webp
+│   ├── orquidea-phalaenopsis.webp
+│   ├── pinoquio-marsala.webp
+│   ├── rosasvermelhasjornal-removebg.png
+│   ├── rosasvermelhasjornal.webp
+│   └── rosasvermelhas.webp
+├── index.html
+├── interatividade
+│   ├── componentes.js
+│   └── script.js
+├── Parte2.md
+├── produtos.html
+└── README.md 
+
 ## Revisão e diagnóstico do projeto atual
 - O que já está funcionando bem?
   - A estrutura geral da página responde bem a mudanças de tamanhos de tela, mas acaba tendo elementos muito pequenos em telas menores, dificultando a visualização. O menu de navegação também não se adequa bem a tela, tendo seus elementos muito próximos e pequenos, dificultando a utilização do touch.  
