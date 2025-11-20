@@ -12,7 +12,14 @@
     </head>
 
     <body>
-        <div id="header-container"></div>
+        <header>
+        <h1>Transplantas Garden Center</h1>
+        <nav>
+            <a href ="index.html" class="current_page">Início</a>
+            <a href ="produtos.html">Produtos</a>
+            <a href ="contato.html">Contato</a>
+        </nav>
+    </header>
     <main>
 
         <section class="especial">
@@ -80,22 +87,20 @@
     </section>
     </main>
     
-    <div id="footer-container"></div>
-
-<script src="interatividade/script.js"></script>
-<script src="interatividade/componentes.js"></script>
-<script>
-
-    async function carregarPagina() {
-        await Promise.all([
-            carregarComponente('componentes/header.html', '#header-container'),
-            carregarComponente('componentes/footer.html', '#footer-container')
-        ]);
-    
-        inicializarScripts();
-    }
-    
-    carregarPagina();
-</script>
+    <footer>
+        <address>
+            <p>© 2025 Transplantas Garden Center</p>
+            <div class="flex">
+                <p>Endereço EPTG: <a href="https://www.google.com/maps/dir//St.+Hab.+Vicente+Pires+-+Vicente+Pires,+Bras%C3%ADlia+-+DF,+72005-305/@-15.8138006,-48.0912499,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x935a322c2bcf6f23:0x4d680353204a378c!2m2!1d-48.0088481!2d-15.8138161?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">Rua Um Col. Agrícola Vicente Pires S/N, DF, 72110-800</a></p>
+                <p> • Endereço Tag: <a href="https://www.google.com/maps/dir//s%2Fn+N%C3%BAcleo+Rural+Taguatinga+-+Taguatinga,+Bras%C3%ADlia+-+DF,+72322-845/@-15.8377361,-48.1493215,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x935a333b88b04d79:0x7512dd5012634fe6!2m2!1d-48.0669197!2d-15.8377517?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">s/n Núcleo Rural Taguatinga - Taguatinga, Brasília - DF, 72322-845</a></p>
+            </div>
+            <div class="flex">
+                <p>Telefone EPTG:<a href="tel:+556133971155"> (61) 3397-1155 </a></p>
+                <p>• Telefone Tag: <a href="tel: +556135623040">(61) 3562-3040 </a></p>
+            </div>
+            <p>Instagram: <a href="https://www.instagram.com/transplantasgarden/">@transplantasgarden</a></p>
+        </address>
+    </footer>
+    <script src="interatividade/script.js"></script>
 </body>
 </html>

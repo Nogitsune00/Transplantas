@@ -30,7 +30,6 @@ header{
     background-color: var(--background_color);
     position: sticky;
     top: 0;
-    z-index: 999;
 }
 
 p{
@@ -261,6 +260,7 @@ button:focus{
     padding: 0.3em 0.6em;
     border-radius: 20px;
     border: 1px solid #ccc;
+    margin-bottom: 1%;
 }
 
 .search-box input {
@@ -381,54 +381,4 @@ button:focus{
         width: 21vw;
     }
 }
-/* --- Menu Hamburger --- */
 
-
-.menu-hamburger {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1001; 
-    color: var(--dark_green_color);
-}
-
-@media(max-width: 768px) {
-    
-    header {
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu-hamburger {
-        display: block;
-    }
-
-    header nav#nav-menu {
-        position: fixed;
-        top: 0;
-        right: -100%; 
-        width: 70%; 
-        height: 100vh; 
-        background-color: var(--background_color);
-        
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 5rem 2rem 2rem; 
-        gap: 1.5rem;
-        
-        box-shadow: -4px 0 10px rgba(0,0,0,0.1);
-        transition: right 0.3s ease-in-out;
-        z-index: 1000;
-    }
-
-    header nav#nav-menu.menu-open {
-        right: 0; 
-    }
-
-    header nav#nav-menu .search-box {
-        width: 100%;
-        margin-left: 0;
-    }
-}
