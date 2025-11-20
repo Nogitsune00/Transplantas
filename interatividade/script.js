@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+function inicializarScripts() {
 
     let count = 1;
     const forward = document.getElementById("forward_special");
@@ -78,7 +78,24 @@ document.addEventListener('DOMContentLoaded', function() {
             produto.style.display = text.includes(value) ? 'grid' : 'none';
         });
     });
-});
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle?.addEventListener('click', () => {
+        navMenu?.classList.toggle('menu-open');
+    });
+   
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('#nav-menu a');
+
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+
+        if (currentPath === linkPath || (currentPath === '/' && linkPath.endsWith('/index.html'))) {
+            link.classList.add('current_page');
+        }
+    });
+};
 function formatString(value) {
     return value
         .toLowerCase()
