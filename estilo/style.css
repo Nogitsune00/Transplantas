@@ -113,6 +113,7 @@ nav svg{
 
 .grid{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-template-rows: auto auto;
 }
 
@@ -311,9 +312,6 @@ button:focus{
         width: clamp(10px, 50%, 600px);
         height: clamp(30px, 50%, 34px);
         margin-left: auto;
-    }
-    .grid{
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
 }
 
