@@ -6,15 +6,17 @@
 
 ## Estrutura de arquivos
 
-Transplantas/
-├── componentes  
+Transplantas/  
+├── index.html  
+├── contato.html  
+├── produtos.html  
+├── componentes/  
 │   ├── footer.html  
 │   ├── header.html  
 │   └── header-pesquisa.html  
-├── contato.html  
-├── estilo  
+├── estilo/  
 │   └── style.css  
-├── img  
+├── img/  
 │   ├── arranjo_branco-removebg.png  
 │   ├── astromelias.webp  
 │   ├── buque_de_flores_do_campo-removebg.png  
@@ -29,13 +31,11 @@ Transplantas/
 │   ├── pinoquio-marsala.webp  
 │   ├── rosasvermelhasjornal-removebg.png  
 │   ├── rosasvermelhasjornal.webp  
-│   └── rosasvermelhas.webp  
-├── index.html  
-├── interatividade  
+│   └── rosasvermelhas.webp   
+├── interatividade/  
 │   ├── componentes.js  
 │   └── script.js  
-├── Parte2.md  
-├── produtos.html  
+├── Parte2.md   
 └── README.md   
 
 ## Revisão e diagnóstico do projeto atual
