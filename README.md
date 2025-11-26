@@ -7,6 +7,8 @@ Esse é um trabalho universitário onde vamos criar um site para exibir os produ
 
 [Protótipo detalhado no Figma](https://www.figma.com/design/MTeJ6MqGfnK5ulyaLB1oE6/Transplantas?node-id=0-1&t=prtKcw9bp3SQoPoF-1 )  
 [Site hospedado no GitHub Pages](https://nogitsune00.github.io/Transplantas/ )
+Publicado no dia 14/10 e ultima atualizacao dia 21/11.
+
 ## Tecnologias utilizadas
 Para a construção do site foram usadas as principais tecnologias de desenvolvimento web, sendo elas:  
 HTML5 - Linguagem de marcação de HiperTexto  
