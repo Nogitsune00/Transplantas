@@ -7,9 +7,7 @@ Esse é um trabalho universitário onde vamos criar um site para exibir os produ
 
 [Protótipo detalhado no Figma](https://www.figma.com/design/MTeJ6MqGfnK5ulyaLB1oE6/Transplantas?node-id=0-1&t=prtKcw9bp3SQoPoF-1 )  
 [Site hospedado no GitHub Pages](https://nogitsune00.github.io/Transplantas/ )  
-
-
-Publicado no dia 14/10 e ultima atualizacao dia 21/11.
+Site publicado no dia 14/10 e última atualização realizada no dia 21/11.
 
 ## Tecnologias utilizadas
 Para a construção do site foram usadas as principais tecnologias de desenvolvimento web, sendo elas:  
@@ -57,16 +55,20 @@ Transplantas/
 │   │   ├── edge-contato.png    
 │   │   ├── edge-index.png   
 │   │   └── edge-produtos.png  
-│   └── teste-responsividade/  
-│       ├── Desktop Full HD.png  
-│       ├── Desktop HD.png  
-│       ├── iPad pro.png  
-│       ├── iPad.png  
-│       ├── iPhone 12 Pro.png  
-│       └── iPhone SE.png   
+│   ├── teste-responsividade/  
+│   │    ├── Desktop Full HD.png  
+│   │    ├── Desktop HD.png  
+│   │    ├── iPad pro.png  
+│   │    ├── iPad.png  
+│   │    ├── iPhone 12 Pro.png  
+│   │    └── iPhone SE.png   
+│   ├── avaliacoes-recebidas/  
+│   │   └── avaliacao-dupla.md  
+│   └──avaliacoes-enviadas/  
+│       └── avaliacao-transplantas.md  
 └── README.md 
 
-A pasta docs contém imagens do site em diferentes testes de caso, mostrando a responsividade e o seu comportamento em diferentes navegadores. Já a pasta de estilo apresenta os arquivos de CSS, seguindo pela mesma lógica temos a pasta interatividade, que guarda os arquivos que contêm JavaScript. Passando para a próxima pasta, temos a pasta de componentes, que guarda diferentes arquivos com códigos HTML que são integrados nas páginas completas ao acessar o site. Por fim, temos a pasta img que armazena todas as imagens utilizadas no decorrer do site.
+A pasta docs contém imagens do site em diferentes testes de caso, assim como a avaliação recebida pela outra dupla e a avaliação feita para esta mesma dupla, mostrando  nos testes a responsividade do site em diferentes tamanhos de tela e o seu comportamento em diferentes navegadores. Já a pasta de estilo apresenta os arquivos de CSS, seguindo pela mesma lógica temos a pasta interatividade, que guarda os arquivos que contêm JavaScript. Passando para a próxima pasta, temos a pasta de componentes, que guarda diferentes arquivos com códigos HTML que são integrados nas páginas completas ao acessar o site. Por fim, temos a pasta img que armazena todas as imagens utilizadas no decorrer do site.
 ## Projeto
 Esse projeto foi proposto para ser realizado ao longo do semestre, sendo dividido em três partes principais, que abordam diferentes etapas do desenvolvimento.
 ### Parte 1
@@ -105,8 +107,12 @@ O maior desafio do projeto foi lidar com a responsividade da página de produtos
 ### Evolução do projeto
 O projeto teve uma grande evolução de como seus elementos funcionam, tendo mais interação com o usuário e melhorando a experiência de se navegar em diferentes tamanhos de tela. No começo não haviam muitas interações do site, sendo ele muito estático, mas com o decorrer do projeto ele se tornou mais interessante, sendo essa uma grande mudança. Acreditamos que o projeto atende a sua proposta, pois com ele aprendemos a trabalhar melhor em equipe, passamos por diversas ferramentas para desenvolver o site a aprendemos mais com elas, além de ver o potencial que se pode alcançar em um projeto com estudo próprio e instruções de outros, o que resultou em um site funcional e interessante.
 ### Feedbacks recebidos
-
-
+#### O que aprendemos com a avaliação dos colegas
+Com base na avaliação recebida, pudemos perceber diversos pontos importantes sobre o desenvolvimento do projeto. A análise destacou que nossa modularização foi bem executada, especialmente pela separação do header, footer e header de pesquisa, o que deixou o código mais organizado e facilitou a manutenção. Também recebemos elogios pela implementação do menu hambúrguer e pelas integrações externas, como o link para WhatsApp e Instagram, que são recursos úteis para pequenos negócios. Além disso, os ajustes realizados em responsividade e acessibilidade foram reconhecidos como positivos e mostraram que conseguimos evoluir desde as primeiras entregas.
+#### Feedbacks mais úteis
+Entre os feedbacks mais úteis, destacam-se as observações sobre a responsividade em telas menores, especialmente o tamanho reduzido de algumas imagens e a necessidade de garantir que todos os botões possuam aria-label para melhorar a acessibilidade real do site. Também foi citado que alguns pontos do CSS poderiam ser reorganizados, o que ajuda a lembrar da importância de manter apenas o que é necessário no repositório. Essas sugestões foram essenciais porque evidenciam detalhes que impactam diretamente a experiência do usuário e a qualidade técnica do projeto.
+#### Como pretendemos aplicar as sugestões
+Pretendemos aplicar essas sugestões revisando novamente a responsividade dos elementos, principalmente imagens e cards de produtos, garantindo que ocupem o espaço de maneira mais confortável em celulares. Também ajustaremos os nomes acessíveis nos botões para atender às boas práticas de acessibilidade. Outro ponto importante será reorganizar o CSS e remover arquivos não utilizados, mantendo o repositório limpo e eficiente. Por fim, consideramos implementar algumas das recomendações adicionais para o negócio, como uma página “Sobre nós”, formulário funcional via Formspree e possivelmente um catálogo em PDF para facilitar a visualização dos produtos.
 ### Relevância para o Negócio
 Acreditamos que o site agregaria valor ao negócio escolhido ao ponto de que quando começamos o projeto o negócio não tinha um site, tendo seus clientes que irem até a loja ou ligar para ela para saber se tinha o que precisavam, mas ao passo que a loja apresenta um site para o cliente ele pode, mais facilmente, ter contato com o negócio e ser incentivado a conhecê-lo, gerando uma rede maior de clientes.
 ## Próximos passos e melhorias futuras

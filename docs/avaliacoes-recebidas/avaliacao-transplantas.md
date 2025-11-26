@@ -1,4 +1,4 @@
-# Avaliação do Projeto Transplantas – Parte 3
+# Avaliação do Projeto Transplantas 
 
 ## 1. Qualidade Geral do Projeto
 O projeto demonstra boa organização, modularização consistente e evolução clara em relação à primeira parte. A separação de componentes (header, footer e header de pesquisa) foi bem implementada e facilita manutenção.
